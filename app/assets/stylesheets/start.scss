@@ -1,0 +1,32 @@
+// Place all the styles related to the start controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.footerHolder{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 20px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+.footerCustom {
+	position: relative;		
+	height: 200px;		
+	float: none;
+	width: 500px;				
+	text-align: center;
+
+}
+
+.bodyCustom{height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+
+}
+
+.conitosLogoContainer{
+	position: relative;
+	top: 4px;
+}

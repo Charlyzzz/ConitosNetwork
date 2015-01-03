@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ConitosNetwork</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+	<%= csrf_meta_tags %>
+</head>
+<div class="bodyCustom">
+	<header class="navbar">		
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">					
+					<a class="navbar-brand">Conitos Team</a>					
+				</div>
+				<ol class="noBullet" style=" float: right; list-style-type: none" >					
+					<li>
+						<div class="conitosLogoContainer">
+							<%= image_tag("logo.png", :width => 121, :height => 42) %>	
+						</div>
+						
+					</li>	
+				</ol>
+			</div><!-- /.container-fluid -->
+
+		</nav>	
+
+
+		<%= yield %>
+		
+	</header>
+	
+	<div class="footerHolder" >
+		<div class="customFooter">
+			<hr size=3 width=500>
+			<p>Conitos Team&copy; LLC 2015</p>			
+		</div>
+	</div>
+
+	
+	<script>
+	$(document).ready(function () {
+		$('.carousel').carousel({
+			interval: 4000});
+
+		$('.carousel').carousel('cycle');
+	});  	
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</div>
+
+</html>
